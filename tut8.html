@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>This is forms tutorials</h2>
+    <form action="">
+        <label for="name">Name</label>
+        <div>
+             <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role:- <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <!-- With the Help of name attribute we'll be able to fetch the data from frontend in backend -->
+            Email:- <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+           Write About Yourself:- <textarea name="" id="" cols="30" rows="10">
+
+            </textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"> Car
+                <select name="myCar" id="car">
+                    <option value="IND">Indica</option>
+                    <option value="SWF">Swift</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit Now">
+        </div>
+            <input type="reset" value="reset now">
+    </form>
+</body>
+</html>

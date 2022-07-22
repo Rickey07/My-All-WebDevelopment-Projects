@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Selectors & More Styling</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid green;
+            width: 500px;
+            background-color: aliceblue;
+            padding: 34px;
+            margin: 18px auto;
+        }
+
+        .btn {
+            background-color: crimson;
+            padding: 6px;
+            list-style: none;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(231, 120, 142);
+            color: black;
+        }
+
+        a:visited {
+            background-color: rgb(216, 216, 54);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam amet praesentium nobis quis fugiat ipsa, rerum voluptates voluptatibus, delectus tempore ullam dolores consequatur a sit asperiores molestiae vero est, neque repellendus esse eaque qui.</p>
+        <a href="https://www.google.com" class="btn">Read More</a>
+        <button class="btn">contact us</button>
+    </div>
+</body>
+</html>

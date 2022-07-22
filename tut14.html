@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* This is an class selector */
+      .redCol {
+        color: red;
+      }
+      /* This is an class selector */
+
+      .bgBlue {
+        background-color: aqua;
+      }
+      /* This is an Group selector */
+      footer,
+      span {
+        background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Selectors</h3>
+    <p class="redCol">
+      This is a simple paragraph to demonstrate CSS Selectors
+    </p>
+    <p id="SecondPara" class="redCol">
+      This is another simple paragraph to demonstrate CSS Selectors
+    </p>
+    <div>
+      <p class="redCol bgBlue">
+        This is yet another simple paragraph inside a div to demonstrate CSS
+        Selectors
+      </p>
+      <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+  </body>
+</html>
