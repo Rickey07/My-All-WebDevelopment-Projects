@@ -1,0 +1,166 @@
+/* Fonts needs to be imported  */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap");
+
+/* * Resetting the everything  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Design  */
+
+.main-header {
+  border-bottom: 4px solid #ff5722;
+  background-color: rgb(48, 71, 69);
+  padding: 10px 15px;
+}
+
+.main-nav {
+  border: 2px solid green;
+  text-align: center;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.right-nav li {
+  list-style: none;
+  margin: 5px;
+  padding: 9px;
+  margin-right: 30px;
+}
+
+.right-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.right-nav li a:hover {
+  border-bottom: 2px solid #ff5722;
+}
+
+h2 {
+  margin-right: auto;
+  margin-left: 4%;
+  color: #fff;
+}
+
+h2 span {
+  color: #ff5722;
+}
+
+/* // Navigation completed here  */
+
+#showcase {
+  background-image: url("../images/student-849822_1920.jpg");
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  margin: auto;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 80%;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container p {
+  color: #ffffff;
+}
+
+#newsletter {
+  background-color: rgb(48, 71, 69);
+}
+
+.showcase-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.showcase-flex h2 {
+  margin-right: auto;
+  /* color: #ff5722; */
+  position: relative;
+  top: -42px;
+}
+
+form {
+  width: 50%;
+}
+
+.showcase-flex form input {
+  padding: 5px 8px;
+  text-align: center;
+  width: 50%;
+  border-radius: 3px;
+  margin-right: 55px;
+}
+
+.showcase-flex form button {
+  padding: 7px 10px;
+  text-align: center;
+  border-radius: 4px;
+  color: #ffffff;
+  background: #ff5722;
+  width: 40%;
+}
+
+.showcase-flex form button:hover {
+  background: #ff5722;
+}
+
+.services-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  margin: 2px 4px;
+}
+
+.box img {
+  height: 100px;
+  width: 120px;
+}
+
+.services-container {
+  margin-top: 41px;
+}
+
+.main-footer {
+  margin-top: 41px;
+  background-color: #ff5722;
+}
+
+.container-footer {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  padding: 12px 10px;
+}
+
+.container-footer p span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
