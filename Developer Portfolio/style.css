@@ -1,0 +1,173 @@
+/* @import fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap");
+
+/* Variables  */
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --third-color: #817674;
+  --btn-color:#ECCB47;
+}
+
+/* * Globals *  */
+
+.btn {
+}
+
+/* Resetting the CSS  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+/* * Navigation bar & Header Designing *  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    border: 3px solid white;
+}
+
+header .navigation .nav-ul {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+header a {
+  color: #817674;
+  text-decoration: none;
+  padding: 3px 6px;
+  margin: 2px 9px;
+  transition: all 1s ease-in;
+
+}
+
+header .nav-ul li a:hover {
+    cursor: pointer;
+    /* background: var(--third-color); */
+    transform: scale(1);
+    color: var(--secondary-color);
+
+}
+
+.nav-ul li {
+  list-style: none;
+}
+
+header .btn {
+    padding: 7px;
+    font-size: 1.1rem;
+    background-color: var(--btn-color);
+    border-radius: 4px;
+    transition: all 1s ease-in;
+
+}
+
+header .btn:hover {
+    cursor: pointer;
+    background: var(--third-color);
+    transform: scale(1);
+    color: var(--secondary-color);
+    border-radius: 4px;
+
+}
+
+header h2 {
+  color: var(--secondary-color);
+  /* margin-right: auto; */
+}
+
+header h2:hover {
+    cursor: pointer;
+}
+
+
+/* Header and navigation completed for the desktop  */ 
+
+
+/* Main container to wrap up things in that */
+
+.main-container {
+    width: 80%;
+    /* border: 2px solid white; */
+    margin: auto;
+}
+
+/* Section About Me  */
+
+.container {
+    width: 40%;
+    /* border: 2px solid white; */
+    /* position: relative;   */
+    /* top: 50px; */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+section .container h1 {
+    color: var(--secondary-color);
+}
+
+section .container p {
+    color: var(--third-color);
+}
+
+/* Section About Me Completed  */
+
+/* Section Logo's Started  */
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* border: 2px solid white; */
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    transition: all 1s ease-in;
+}
+.logo:hover {
+    filter: invert(100%);
+}
+
+/* Section Logos Completed */
+
+/* Section Projects Started */
+
+.two-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.box {
+    /* width: 90%;   */
+    /* text-align: center; */
+}
+
+
+.box h2{
+    color: var(--secondary-color);
+    width: 80%;
+}
+
+.box p {
+    color: var(--third-color);
+    width: 80%;
+
+}
