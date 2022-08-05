@@ -1,0 +1,254 @@
+/* Importing the fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
+
+
+/* CSS Reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Globals Variables  */
+
+:root {
+    --primary-color:#1C2C59;
+    --text-color:#ffffff;
+    --nav-text-color:rgb(12, 12, 12);
+}
+
+/* Globals Classes */
+
+.h-primary {
+    font-size: 2.6rem;
+    padding: 12px;
+    color: var(--primary-color);
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid var(--primary-color);
+    color: white;
+    background: var(--primary-color);
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 12px 6px;
+    font-size: 1rem;
+}
+.center {
+    text-align: center;
+}
+/* Navigation Bar*/
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Navigation Bar: Logo and Image  */
+
+#logo {
+    margin: 6px 24px;
+}
+
+#logo img {
+    margin: 3px 5px;
+    height: 60px;
+}
+
+
+/* Navigation Bar: List Styling  */
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 6px 11px;
+    color:var(--text-color)
+}
+
+#navbar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 150px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    margin-top: 62px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../Img/pexels-ella-olsson-1640777.jpg') no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -2;
+}
+
+#home h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#home p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#home .btn:hover {
+    opacity: 0.8;
+    transition: all 1s;
+    color: green;
+    font-weight: bolder;
+}
+
+/* Services section  */
+
+.services-container {
+    display: block;
+    margin: auto;
+}
+
+.services-container h1 {
+    margin-top: 100px;
+}
+
+#services {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+/* flex-direction: column; */
+#services .box {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 24px;
+    margin: 10px 26px;
+    background-color: #838792;
+    color: var(--text-color);
+    box-shadow: 10px 15px 5px var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+}
+
+#services .box img {
+    height: 100px;
+    padding: 2px 4px;
+    margin: 3px 7px;
+}
+
+/* Clients Section Styling  */
+
+#client-section {
+    display: block;
+    margin: auto;
+    height: 344px;
+    margin-top: 26px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2C59;
+
+}
+
+#clients .client-item {
+    padding: 2px 35px;
+    margin: 5px 6px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#clients .client-item img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    filter: invert(100%);
+}
+
+/* Contact Section  */
+
+.main-footer {
+    background: #7792dc;
+    color: var(--text-color);
+}
+
+#contact-box {
+    /* padding: 34px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-box input , #contact-box textarea {
+    width: 100%;
+    padding: .2rem;
+    text-align: center;
+    border-radius: 5px ;
+    display: block;
+    font-size: 1.1rem;
+}
+
+form {
+    width: 60%;
+}
+
+.form-group {
+    margin: 8px 10px;
+    padding: 2px 3px;
+    }
+
+.submit-btn {
+    padding: 4px 6px;
+    width: 100%;
+}
+
+.copyright {
+    background-color: black;
+    color: var(--text-color);
+}
+
