@@ -8,13 +8,22 @@
   --primary-color: #000;
   --secondary-color: #fff;
   --third-color: #817674;
-  --btn-color:#ECCB47;
+  --btn-color:#ECCB47; 
+  --footer-color:#3d3d3c;
 }
 
 /* * Globals *  */
 
 .btn {
+    
 }
+
+.main-container {
+    width: 80%;
+    /* border: 2px solid white; */
+    margin: auto;
+}
+
 
 /* Resetting the CSS  */
 
@@ -37,7 +46,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 10%;
-    border: 3px solid white;
+    /* border: 3px solid white; */
 }
 
 header .navigation .nav-ul {
@@ -67,7 +76,7 @@ header .nav-ul li a:hover {
   list-style: none;
 }
 
-header .btn {
+ .btn {
     padding: 7px;
     font-size: 1.1rem;
     background-color: var(--btn-color);
@@ -76,7 +85,7 @@ header .btn {
 
 }
 
-header .btn:hover {
+ .btn:hover {
     cursor: pointer;
     background: var(--third-color);
     transform: scale(1);
@@ -85,13 +94,16 @@ header .btn:hover {
 
 }
 
-header h2 {
-  color: var(--secondary-color);
+ h2 {
+    color: var(--secondary-color);
   /* margin-right: auto; */
+    font-size: 1.3rem;
+    transition: all 1s ease-in;
 }
 
 header h2:hover {
     cursor: pointer;
+    filter:blur(1px);
 }
 
 
@@ -100,13 +112,6 @@ header h2:hover {
 
 /* Main container to wrap up things in that */
 
-.main-container {
-    width: 80%;
-    /* border: 2px solid white; */
-    margin: auto;
-}
-
-/* Section About Me  */
 
 .container {
     width: 40%;
@@ -116,6 +121,8 @@ header h2:hover {
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
+/* Section About Me  */
 
 section .container h1 {
     color: var(--secondary-color);
@@ -142,7 +149,9 @@ section .container p {
     transition: all 1s ease-in;
 }
 .logo:hover {
-    filter: invert(100%);
+    filter: brightness(200%);
+    filter: blur(2px);
+
 }
 
 /* Section Logos Completed */
@@ -153,21 +162,92 @@ section .container p {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    /* flex-wrap: wrap; */
 }
 
 .box {
-    /* width: 90%;   */
-    /* text-align: center; */
+    margin: 5px 19px;
+    border-radius: 3px;
+    box-shadow: 10px 15px 7px var(--third-color);
 }
 
 
 .box h2{
     color: var(--secondary-color);
     width: 80%;
+    margin: 2px 4px;
+    padding: 2px 4px;
+
 }
 
 .box p {
     color: var(--third-color);
     width: 80%;
+    padding: 2px 4px;
+    margin: 2px 4px;
+}
 
+/* Section projects completed here  */
+
+/* sections description started  */ 
+
+.Flex-section {
+    background: var(--footer-color);
+    padding: 9px 15px;
+    margin-top: 30px;
+}
+
+.boxes p{
+    color: var(--third-color);
+    margin: 3px 4px;
+    padding: 5px;
+    z-index: 1;
+}
+.boxes h2{
+    color: var(--secondary-color);
+}
+
+.contact-container h2 {
+    margin:2px 3px;
+    padding: 2px 3px;
+}
+.contact-container button {
+    margin:2px 3px;
+    padding: 2px 3px;
+}
+.contact-container p {
+    margin:2px 3px;
+    padding: 2px 3px;
+}
+
+footer {
+    background: var(--footer-color);
+    padding: 13px;
+}
+
+#footer-flex {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#footer-flex ul {
+    display: flex;
+    justify-content:center;
+}
+
+#footer-flex ul li  {
+    margin: 4px 4px;
+}
+
+#footer-flex ul li a img {
+    transition: all 1s ease-in;
+}
+
+#footer-flex ul li a img:hover {
+    filter: invert(100%);
+}
+
+#footer-flex h2{
+    margin-right: auto;
 }
