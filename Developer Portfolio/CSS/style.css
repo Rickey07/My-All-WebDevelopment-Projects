@@ -12,10 +12,20 @@
   --footer-color:#3d3d3c;
 }
 
+
 /* * Globals *  */
 
 .btn {
     
+}
+
+html {
+    width: 100%;
+}
+
+.full-container {
+    width: 100%;
+    margin: auto;
 }
 
 .main-container {
@@ -37,6 +47,7 @@
 
 body {
     background: var(--primary-color);
+    background-size: cover;
 }
 
 /* * Navigation bar & Header Designing *  */
@@ -143,6 +154,7 @@ section .container p {
     /* border: 2px solid white; */
     height: 100px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -251,3 +263,5 @@ footer {
 #footer-flex h2{
     margin-right: auto;
 }
+
+/* footer completed here  */

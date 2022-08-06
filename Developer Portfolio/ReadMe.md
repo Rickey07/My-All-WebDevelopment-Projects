@@ -1,1 +1,0 @@
-# This is an sample portfolio which you can use for your reference

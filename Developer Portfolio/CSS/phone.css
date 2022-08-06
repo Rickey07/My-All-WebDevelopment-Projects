@@ -1,0 +1,97 @@
+/* Styling for the Tablet  */
+
+@media screen and (max-width:920px) and (min-width:426px) {
+    .container {
+        width:100%;
+        text-align: center;
+    }
+
+    body {
+        /* width: fit-content; */
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .two-box-container {
+        flex-wrap: wrap;
+        /* width: 100%; */
+    }    
+
+    .two-box-container .box {
+        margin-bottom: 25px;
+        margin:25px auto;
+        width: 90%; 
+    }
+
+    .two-box-container .box img {
+        width: 100%;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin: 8px 25px;
+    }
+   
+    
+
+    
+}
+
+@media screen and (max-width:425px) and (min-width:200px) {
+    .container {
+        width:100%;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    body {
+        width: fit-content;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .logos {
+        flex-wrap: wrap;
+    }
+
+    .two-box-container {
+        flex-wrap: wrap;
+        /* width: 100%; */
+        /* border-radius: 18px; */
+
+    }    
+
+    .two-box-container .box {
+        margin-bottom: 25px;
+        margin:25px auto;
+        width: 90%; 
+    }
+
+    .two-box-container .box img {
+        width: 100%;
+    }
+
+    footer {
+        display: block;
+        margin: auto;
+        border-radius: 18px;
+    }
+
+    .logo {
+        margin: 8px 25px;
+    }
+
+   
+    
+}
