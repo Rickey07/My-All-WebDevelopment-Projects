@@ -1,0 +1,174 @@
+/* Design Systems
+
+Fonts:
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+- FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* ------------------- */
+/*     Global  Reset         */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Reset Font Weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #b738da;
+}
+
+/* set up the body */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background: url(./assets/bg.png) no-repeat center center/cover;
+  height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: relative;
+}
+
+header {
+  background: #101010;
+  padding: 1.8rem .7rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: relative;
+  right: 2rem;
+  border-right: 2px solid #ffffff;
+  padding-right: 15px;
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: .3rem 1.5rem;
+  font-size: 1.8rem;
+}
+
+.small-button {
+  position: relative;
+  left: 200px;
+  bottom: 0px;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: 1s;
+}
+
+button:hover {
+  color: #b738da;
+  background: transparent;
+  border: var(--primary-color) 2px solid;
+}
+
+.section-content {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-container button {
+  margin-top: 10rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  transition: 1s;
+}
+
+.content-container button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: #ffffff 2px solid;
+}
+
+.content-container h1 {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.content-container p {
+  color: #ffffff;
+
+}
