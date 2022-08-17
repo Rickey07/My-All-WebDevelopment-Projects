@@ -1,0 +1,443 @@
+/* Design Systems
+Fonts:
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+- FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ------------------- */
+/*     Global  Reset         */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+
+:root {
+  --primary-color:#7133cc;
+  --text-color-white:#ffffff;
+  --text-color-dark:#101010;
+  --nav-btn-color:#00A1B4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Reset Font Weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden ;
+}
+
+/* *************************** */
+/* ------- Header Section ---- */
+/* *************************** */
+
+header {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  margin-bottom: 10rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-links .nav-list {
+  list-style: none;
+}
+
+.navbar-links .nav-list a {
+  text-decoration: none;
+  color: var(--text-color-white);
+  font-size: 1.5rem;
+  padding: 0.8rem 2.2rem 1.4rem 1.5rem;
+}
+
+.logo {
+  margin-right: 48rem;
+}
+
+.logo img{
+  width: 12.8rem;
+}
+
+
+.navbar-links .nav-list:last-child {
+  background-color: var(--nav-btn-color);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.left-hero-section {
+  width: 65rem;
+}
+
+.left-hero-section h1 {
+  font-size: 6rem;
+  color: var(--text-color-white);
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.left-hero-section p {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+
+.right-hero-section img {
+  width: 65rem;
+}
+
+
+/* ------------------ Header Completed --------------------- */
+
+
+.specification-section {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 10rem;
+}
+
+.specification-section-left img{
+  height: auto;
+  width: 55rem;
+}
+
+
+.specification-section-right {
+  height: auto;
+  width: 65rem;
+}
+
+
+.specification-section-right h1{
+  font-size: 4rem;
+  overflow: hidden;
+  color: var(--primary-color);
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.specification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.specification-heading-div {
+  display: flex;
+  gap: 2.8rem;
+}
+
+.specification-heading-div h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+ion-icon {
+  font-size: 32px;
+  color: #00A1B4;
+}
+
+.specification-list-item p {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 50%;
+  margin-left: 6rem;
+  margin-top: 1.2rem;
+}
+
+
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-section h1 {
+  width: 24%;
+  font-size: 3.2rem;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features-lists-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 80%;
+  margin-top: 10rem;
+}
+
+
+.feature-item {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px 3px #888888;
+  border: 1px solid transparent;
+  transition: all 1s;
+}
+
+.feature-item:hover {
+  transform: scale(1.01);
+}
+
+.feature-item h2 {
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+
+.feature-item p {
+  width: 60%;
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.feature-item img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 4rem;
+  border-radius: 40%;
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+.feature-item img:hover {
+  filter:blur(1px);
+}
+
+
+
+footer {
+  padding: 5rem;
+  background: var(--primary-color);
+  margin-top: 6rem;
+}
+
+.contains-text {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contains-text a {
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+
+
+
+/* *** Phone// Tablet Responsive design code goes here ***/
+
+
+@media (max-width:1300px) {
+  .logo {
+    margin-right: 8rem;
+  }
+
+  .left-hero-section {
+    text-align: center;
+  }
+
+  .right-hero-section img {
+    width: 40rem;
+  }
+
+  .left-hero-section h1 {
+    font-size: 4rem;
+  }
+
+  .specification-section-right {
+    width: 34rem;
+  }
+
+  .specification-section-right h1 {
+    font-size: 3rem;
+  }
+
+  .specification-list {
+    gap: 2rem;
+  }
+
+  .specification-heading-div h2 {
+    font-size: 1.9rem;
+  }
+
+  .specification-list p {
+    font-size: 1.2rem;
+  }
+
+  .features-section h1{
+    width: 100%;
+  }
+
+  .features-lists-div {
+      gap: 1.5rem;
+      width: 96%;
+  }
+
+  .feature-item h2 {
+    font-size: 2rem;
+  }
+
+  .feature-item p {
+    width: 100%;
+  }
+}
+
+@media (max-width:1000px) {
+  .navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .hero {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .specification-section {
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+    flex-wrap: center;
+  }
+
+  .features-lists-div {
+    flex-wrap:wrap;
+  }
+}
+
+@media (max-width:685px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left-hero-section  {
+    width: 100%;
+  }
+
+  .specification-section-left img {
+    height: auto;
+    width: 34rem;
+} 
+.specification-section-right h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.specification-list-item p {
+  width: 80%;
+}
+
+}
+
+@media (max-width:403px) {
+  .right-hero-section img {
+    width: 30rem;
+  }
+
+  .specification-section-left img {
+    width: 28rem;
+  }
+
+  .specification-heading-div h2 {
+    text-align: center;
+  }
+
+  .feature-item {
+    text-align: center;
+    padding: 5rem 2rem;
+    width: 90%;
+  }
+
+  .specification-section-right {
+    width: 28rem;
+  }
+
+  .left-hero-section h1 {
+    font-size: 3.5rem;
+  }
+}
