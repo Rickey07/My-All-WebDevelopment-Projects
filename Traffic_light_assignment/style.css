@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+:root {
+    --background-color:#86d2f2;
+    --go-light-color:#199473;
+    --ready-light-color:#f7c948;
+    --stop-light-color:#cf1124;
+    --bulb-container-background:#1f1d41;
+    --buttons-background-color:#4b5069;
+}
+
+.background {
+    background-color: var(--background-color);
+    min-height: 100vh;
+}
+
+.buttons {
+    background: var(--buttons-background-color);
+    margin-top:2rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: .75rem;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.lights {
+    background: var(--buttons-background-color);
+    border-radius: 50%;
+    margin-top: 2rem;
+    padding: 40px;
+}
+
+.right-container {
+    background-color: var(--bulb-container-background);
+    border-radius: 30px;
+    min-height: 400px;
+}
+
+.left-container {
+    gap: 1rem;
+    min-height: 800px;
+}
