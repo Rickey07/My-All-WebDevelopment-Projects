@@ -1,0 +1,32 @@
+* , ::after,::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    min-height: 100vh;
+}
+
+#seasonSmallImage {
+    height: 500px;
+    min-width: 500px;
+    background: #777;
+}
+
+
+.four-btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 900px;
+}
+
