@@ -1,0 +1,44 @@
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-unlike:#cbd2d9;
+    --bg-like:#0967d2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+#puppyImage {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 5rem;
+}
+
+#likeButton {
+    background: var(--bg-unlike);
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 1.5rem;
+    outline: none;
+}
+
+#likeIcon {
+    color: var(--bg-unlike);
+    margin-right: .3rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+}
+
+.active {
+    background: #101010;
+    color: #ffffff;
+}
+
