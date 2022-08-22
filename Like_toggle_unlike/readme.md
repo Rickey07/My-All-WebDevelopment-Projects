@@ -5,7 +5,7 @@ Like and Unlike Toggling built using HTMl ,CSS and JS.
 <br>
 <br>
 
-## 📌 **Live Site URL:** <a href="like-unlike.netlify.app">**Visit Now** 🚀</a>
+## 📌 **Live Site URL:** <a href="https//:like-unlike.netlify.app">**Visit Now** 🚀</a>
 
 <br>
 
@@ -25,8 +25,10 @@ Like and Unlike Toggling built using HTMl ,CSS and JS.
 
 ## 📌 What I Learn
 
-👉 Learn about the bootstrap buttons.
-👉 Learn about dynamically changing image using the JS events
+👉 Learn about the bootstrap buttons.<br>
+
+👉 Learn about dynamically changing image using the JS events<br>
+
 👉 Also Learn about new property `Toggle ` in JS by which I've implemented the Dark mode in the app.
 
 
