@@ -1,0 +1,36 @@
+/* Import the fonts  */
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+* , ::before ,::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#tip-calculator-image {
+    height: 150px;
+    width: 150px;
+    margin-top: 5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#submitBtn {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    background: #777;
+}
+
+#error-message {
+    color: red;
+}
