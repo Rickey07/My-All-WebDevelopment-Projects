@@ -1,0 +1,66 @@
+:root {
+    --main-bg:#690cb0;
+    --text-primary:#ffffff;
+}
+
+body {
+    background: var(--main-bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.heading-typing {
+    margin-bottom: 1.8rem;
+}
+
+.btn-container {
+    gap: 3rem;
+}
+
+.quoteDisplay {
+    color: #101010;
+    font-size: 1.7rem;
+}
+
+.img-time {
+    height: 100px;
+    width: 100px;
+}
+
+.timer-container {
+    gap: 2rem;
+}
+
+.timer {
+    font-size: 1.8rem;
+}
+
+footer {
+    margin-top: 1.5rem;
+}
+
+.footer-text-center {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-text-center a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.warning {
+    color: rgb(236, 67, 67);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.success {
+    color: rgb(81, 243, 81);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
